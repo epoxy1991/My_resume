@@ -1,0 +1,355 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
+    border-right: solid 1px white;
+}
+
+.sidenav > div {
+    margin-left: 30%;
+    padding-top: 20px;
+}
+
+.sidenav > div > img {
+    border-radius: 50%;
+    border-width: 20px;
+}
+
+.sidenav > ul > li {
+    margin-left: 10px;
+    line-height: 50px;
+    padding: 10px;
+}
+
+.sidenav > ul > li > a {
+    width: 100%;
+}
+
+
+.sidenav > ul > li > a > i {
+    padding-right: 10px;
+    color: lightgreen;
+    font-size: 25px;
+    display: inline;
+}
+
+.sidenav > ul > li > a > span {
+    color: black;
+    margin-left: 0;
+}
+.sidenav > ul > li > a:hover {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    margin-left: 250px;
+    flex-direction: column;
+}
+
+.myhome {
+    background-image: url('img/devop2.jpg');
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.myhome > h1,p {
+    padding-left: 30px;
+    color: white;
+}
+
+.myhome > h1 {
+    padding-top: 50px;
+}
+
+.myhome > p {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.myhome button {
+    margin-left: 30px;
+    margin-top: 50px;
+    background-color: transparent;
+    color: lightgreen;
+    border-color: lightgreen;
+}
+
+.myabout {
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.myabout > p {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.myabout > h1 {
+   text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 35px;
+}
+
+.myabout > hr {
+    margin-right: 93%;
+    margin-left: 1%;
+    border: solid 2px lightgreen;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box-wrapper h3 {
+    font-family: monospace;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: -2px;
+}
+
+.box-wrapper i {
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+.box1 {
+    height: 150px;
+    width: 250px;
+    border: 1px solid lightgray;
+    margin-top: 40px;
+    border-radius: 15px;
+    border-bottom: 2px solid blue;
+    box-shadow: 5px 5px 5px grey;
+    transition: transform .7s ease-in-out;
+
+}
+
+.box1:hover {
+  transform: rotateX(360deg);
+}
+
+.box1 i {
+    color: blue
+}
+
+.box2 {
+    height: 150px;
+    width: 260px;
+    border: 1px solid lightgray;
+    margin-top: 40px;
+    border-radius: 15px;
+    border-bottom: 2px solid plum;
+    box-shadow: 5px 5px 5px grey;
+    transition: transform .7s ease-in-out;
+}
+
+.box2:hover {
+    transform: rotateY(360deg);
+}
+
+.box2 i {
+    color: plum
+}
+
+.box3 {
+    height: 150px;
+    width: 250px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 40px;
+    border-bottom: 2px solid goldenrod;
+    box-shadow: 5px 5px 5px grey;
+    transition: transform .7s ease-in-out;
+}
+
+.box3:hover {
+    transform: rotateY(-360deg);
+}
+
+.box3 i {
+    color: goldenrod;
+}
+
+.myskills {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.myskills > h1 {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 35px;
+}
+
+.myskills > hr {
+    margin-right: 94%;
+    margin-left: 1%;
+    border: solid 2px lightgreen;
+}
+
+.myskills > p {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+
+
+.myskills > .myskills-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+h3 {
+    margin-left: 30px;
+}
+
+.myeducation {
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.myeducation > h3 {
+    padding-top: 30px;
+}
+
+.myeducation > .education-section > hr {
+    margin-right: 91%;
+    margin-left: 3%;
+    border: solid 2px lightgreen;
+}
+
+.panel-group .panel {
+    border-radius: 5px;
+    border-color: #EEEEEE;
+    padding:0;
+}
+
+.panel-default > .panel-heading {
+    color: #fff;
+    background-color: #346767;
+    border-color: #EEEEEE;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.short-full {
+    float: right;
+    color: #fff;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: solid 1px #EEEEEE;
+    background-color: #B7FFB7;
+    
+}
+
+.panel-body > p {
+    color: black;
+}
+
+.panel-body > ul {
+    font-weight: bold;
+}
+
+ 
+.nav-tabs{
+ 
+    background-color:#C8D3DB;
+   
+}
+
+
+.testing-flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}   
+
+
+.testing-flex > .test-one {
+    height: 300px;
+    width: 360px;
+    background-image: url('img/devop2.jpg');
+    background-size: cover;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+}
+
+
+.test-one > .button {
+    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.test-one > .project-info > .project-name {
+   font-size: 22px;
+   margin-top: 80px;
+   color: white;
+   z-index: 999;
+}
+
+.test-one > .button > .project-button {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100px;
+    color: white;
+}
+
+.test-one > .button > .project-button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.myportfolio > hr {
+    margin-right: 91%;
+    margin-left: 3%;
+    border: solid 2px lightgreen;
+}
+
+section {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    
+}
+
