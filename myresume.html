@@ -15,16 +15,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-           <meta name="viewport" content="viewport-fit=cover, width=device-width, 
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, 
            initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-           <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     </head>
+
     <body data-spy="scroll" data-target="#mySidenav" data-offset="10">
 
          <div class="flex-container">
              <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
                 
                  <div id="mypics" class="mypics"><img src="img/post_5.jpg" height="100px" width="100px"></div>
+                
                   <ul>
                     <li><a id="home-nav" class="home" href="#myhome"><i class="fas fa-home sideBarIcons"></i><span>Home</span></a></li>
                     <li><a id="about-nav"class="about" href="#myabout"><i class="far fa-id-badge sideBarIcons"></i><span>About</span></a></li>
@@ -32,14 +35,18 @@
                     <li><a id="education-nav" class="education" href="#myeducation"><i class="fas fa-graduation-cap sideBarIcons"></i><span>Education</span></a></li>
                     <li><a id="portfolio-nav" class="portfolio" href="#portfolio"><i class="fas fa-briefcase sideBarIcons"></i><span>Portfolio</span></a></li>
                     <li><a id="experience-nav" class="experience" href="#experience"><i class="fab fa-black-tie sideBarIcons"></i><span>Experience</span></a></li>
-                    <li><a id="contact-nav" class="contact" href="#mycontact"><i class="fas fa-phone sideBarIcons"></i><span>Contact</span></a></li>
+                    <li><a id="contact-nav" class="contact" href="#contact"><i class="fas fa-phone sideBarIcons"></i><span>Contact</span></a></li>
                   </ul>
              </div>
 
              <div class="main">
+                 <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                 <div id="overlay">
+                   <div id="text"></div>
+                 </div>
                  <section id="section1">
                    <div class="myhome" id="myhome">
-                    <h1>LOOKING FOR A WEB DEVELOPER?</h1><BR>
+                     <h1>LOOKING FOR A WEB DEVELOPER?</h1><BR>
                
                         <P>Hi,<br>I'm victor, <br>A WEB DEVELOPER & PROGRAMMER LIVING IN LAGOS, NIGERIA.I 
                            <BR>MAKE WEB APPLICATIONS, USUALLY WITH DJANGO
@@ -47,7 +54,7 @@
                         
                         <button type="button" class="btn btn-light" href="#mycontact">CONTACT ME</button>
                    </div>
-                </section>
+                 </section>
                    <br>
                  <section id="section2">  
                  <div class="myabout" id="myabout">
@@ -68,48 +75,46 @@
                 </section>
                  <br>
 
-                 <section id="section3">
-                 <div class="myskills" id="myskills">
+               <section id="section3">
+                  <div class="myskills" id="myskills">
                      <h1 class="myskills-header">SKILLS</h1>
                      <hr>
                      <p>Curiosity, Understanding context and technical mindset gives me the ability to apply various skills of administering web app solutions.
                          The heart of my skills are listed below:
                      </p>
 
-                     <div class="myskills-section">
+                    <div class="myskills-section">
                       <div class="front-end">
-                        <h3>Front-End</h3>
-                      <ul>
-                        <li><i class="fas fa-angle-right"></i>HTML5</li>
-                        <li><i class="fas fa-angle-right"></i>CSS3</li>
-                        <li><i class="fas fa-angle-right"></i>JQuery</li>
-                        <li><i class="fas fa-angle-right"></i>JavaScript</li>
-                      </ul>
-                   </div>
+                        <h3>Front-End</h3> 
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped active" role="progressbar"
+                          aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            
+                          </div>
+                        </div>
+                      </div>
                 
                 
-                <div class="back-end">
-                 <h3>Back-End</h3>
-                 <ul>
-                   <li><i class="fas fa-angle-right"></i>Python</li>
-                   <li><i class="fas fa-angle-right"></i>Django Web Framework</li>
-                   <li><i class="fas fa-angle-right"></i>REST API</li>
-                   <li><i class="fas fa-angle-right"></i>PostgreSQL</li>
-                 </ul>
-                </div>
+                      <div class="back-end">
+                       <h3>Back-End</h3>
+                       <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        </div>
+                      </div>
+                     </div>
                 
-                <div class="utility-skills">
-                 <h3>Utility</h3>
-                 <ul>
-                   <li><i class="fas fa-angle-right"></i>Git/GitHub</li>
-                   <li><i class="fas fa-angle-right"></i>Windows & Ubuntu</li>
-                   <li><i class="fas fa-angle-right"></i>Bash</li>
-                   <li><i class="fas fa-angle-right"></i>Powershell</li>
-                 </ul>
-                </div> 
-              </div>
-              </div>
-            </section>
+                     <div class="utility-skills">
+                        <h3>Utility</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped active" role="progressbar"
+                          aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+               </section>
 
               <br>
 
@@ -117,7 +122,7 @@
               <div class="myeducation" id="myeducation">
 
                   <div class="education-section">
-                    <h3 class="myeducation-header">EDUCATION</h3>
+                    <h1 class="myeducation-header">EDUCATION</h1>
                     <hr>
                     <br>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -187,11 +192,10 @@
 
               <section id="section5">
                 <div class="myportfolio" id="portfolio">
-                  <h3>PORTFOLIO</h3>
+                  <h1>PORTFOLIO</h1>
                   <hr>
                   <div class="testing-flex">
                     <div class="test-one" id="test-one">
-                      <div class="overlay"></div>
                       <div class="project-info">
                         <p class="project-name"><strong>Weather Application</strong></p>
                       </div>
@@ -227,9 +231,67 @@
               <br>
               <section id="section6">
                 <div class="myexperience" id="experience">
-                  <h3>WORK EXPERIENCE</h3>
+                  <h1>WORK EXPERIENCE</h1>
                   <hr>
+                  <div class="timeline" id="timeline">
+                      
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="main-timeline">
+                                  <a href="#" class="timeline">
+                                      <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                                      <div class="timeline-content">
+                                          <h3 class="title">Web Designer</h3>
+                                          <p class="description">
+                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                          </p>
+                                      </div>
+                                  </a>
+                                  <a href="#" class="timeline">
+                                      <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                                      <div class="timeline-content">
+                                          <h3 class="title">Web Developer</h3>
+                                          <p class="description">
+                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                          </p>
+                                      </div>
+                                  </a>
+                                 
+                              </div>
+                          </div>
+                      </div>
+                  
+                  </div>
+                </div>  
+              </section>
 
+              <section id="section7">
+                <div class="mycontact" id="contact">
+                  <h1>CONTACTS</h1>
+                  <hr>
+                  <form>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                      <input type="text" id="validationDefaultUsername" class="form-control" id="validationServer01" value="" required>
+                      <label class="form-label" for="validationServer01">Name</label>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="validationDefault01" class="form-control" />
+                      <label class="form-label" for="form4Example2">Email address</label>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                      <textarea class="form-control" id="validationTextarea" rows="4" required></textarea>
+                      <label class="form-label" for="validationTextarea">Message</label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                  </form>
+                
                 </div>
               </section>
 
@@ -241,9 +303,9 @@
           integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
           <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
           <script>
-
          	function toggleIcon(e) {
               $(e.target)
                .prev('.panel-heading')
