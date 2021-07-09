@@ -32,7 +32,11 @@ html {
     text-decoration: none;
 }
 
-.sidenav > ul {
+.sidenav .active {
+    margin-left: -250px;
+}
+
+.sidenav {
     list-style-type: none;
 }
 
@@ -46,11 +50,12 @@ html {
 
 .sidenav > .closeBtn:hover {
     color: firebrick;
+    cursor: pointer;
 }
 
 .sidenav > div {
     margin-left: 30%;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .sidenav > div > img {
@@ -66,31 +71,31 @@ html {
     transition: 0.1s ease-in;
 }
 
-
-
-.sidenav > ul > li {
-    margin-left: 10px;
-    line-height: 50px;
-    padding: 10px;
-}
-
-.sidenav > ul > li > a {
+.sidenav > a {
     width: 100%;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 38px;
 }
 
 
-.sidenav > ul > li > a > i {
+.sidenav > a > i {
     padding-right: 10px;
     color: lightgreen;
     font-size: 25px;
-    display: inline-block;
+    display: inline;
 }
 
-.sidenav > ul > li > a > span {
+.sidenav > a > span {
     color: black;
-    margin-left: 0;
+    margin-left: 35px;
+    margin-top: -35px;
+    display: block;
+    font-size: 19px;
 }
-.sidenav > ul > li > a:hover {
+.sidenav > li > a:hover {
     text-decoration: none;
 }
 
@@ -684,7 +689,27 @@ form {
 .main-timeline .timeline:nth-child(even) .timeline-icon{right:25%}
 .main-timeline .timeline-content{margin-top:115px}
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
+.icon {
+    position: fixed;
+    margin-left: 0;
+    z-index: 99999;
+} 
+
+.sidenav {
+    width: 200px;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-left: 200px;
+    width: inherit;
+}
+
 .main-timeline{padding-top:50px}
 .main-timeline:before{left:80px;right:0;margin:0}
 .main-timeline .timeline{margin-bottom:70px}
@@ -715,6 +740,16 @@ form {
     
     .sidenav {
         display: none;
+    }
+
+    .icon {
+        margin-left: 0;
+        position: fixed;
+        z-index: 999999;
+    }
+
+    .myportfolio {
+        z-index: -999;
     }
     
     .box-wrapper {
@@ -779,12 +814,49 @@ form {
 }
 
 @media (min-width: 768px) and (max-width: 768px) {
+    
+    .myhome {
+        margin-top: 35px;
+    }
+
     .sidenav {
+        z-index: 999;
+        width: 250px;
+    }
+
+    .icon i {
+        margin-left: 0px;
+        position: sticky;
         z-index: 999;
     }
 
     .main {
         width: 100%;
-        margin-right: 10%;
+        margin-left: 250px;
+    }
+
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .testing-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .myhome {
+        margin-top: 35px;
+    }
+
+    .icon i {
+        margin-left: -370px;
+        position: fixed;
+        z-index: 999;
     }
 }
