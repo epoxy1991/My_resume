@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+        <script type="text/javascript" src="my_resume.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -24,23 +24,23 @@
 
          <div class="flex-container">
              <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                
+                  <a class="closeBtn" id="btnhide" onclick="hide()">&times;</a>
                 
                  <div id="mypics" class="mypics"><img src="img/post_5.jpg" height="100px" width="100px"></div>
                 
-                  <ul>
-                    <li><a id="home-nav" class="home" href="#myhome"><i class="fas fa-home sideBarIcons"></i><span>Home</span></a></li>
-                    <li><a id="about-nav"class="about" href="#myabout"><i class="far fa-id-badge sideBarIcons"></i><span>About</span></a></li>
-                    <li><a id="skills-nav" class="skills" href="#myskills"><i class="far fa-file sideBarIcons"></i><span>Skills</span></a></li>
-                    <li><a id="education-nav" class="education" href="#myeducation"><i class="fas fa-graduation-cap sideBarIcons"></i><span>Education</span></a></li>
-                    <li><a id="portfolio-nav" class="portfolio" href="#portfolio"><i class="fas fa-briefcase sideBarIcons"></i><span>Portfolio</span></a></li>
-                    <li><a id="experience-nav" class="experience" href="#experience"><i class="fab fa-black-tie sideBarIcons"></i><span>Experience</span></a></li>
-                    <li><a id="contact-nav" class="contact" href="#contact"><i class="fas fa-phone sideBarIcons"></i><span>Contact</span></a></li>
-                  </ul>
+                  
+                    <a id="home-nav" class="home" href="#myhome"><i class="fas fa-home sideBarIcons"></i><span>Home</span></a>
+                    <a id="about-nav"class="about" href="#myabout"><i class="far fa-id-badge sideBarIcons"></i><span>About</span></a>
+                    <a id="skills-nav" class="skills" href="#myskills"><i class="far fa-file sideBarIcons"></i><span>Skills</span></a>
+                    <a id="education-nav" class="education" href="#myeducation"><i class="fas fa-graduation-cap sideBarIcons"></i><span>Education</span></a>
+                    <a id="portfolio-nav" class="portfolio" href="#portfolio"><i class="fas fa-briefcase sideBarIcons"></i><span>Portfolio</span></a>
+                    <a id="experience-nav" class="experience" href="#experience"><i class="fab fa-black-tie sideBarIcons"></i><span>Experience</span></a>
+                    <a id="contact-nav" class="contact" href="#contact"><i class="fas fa-phone sideBarIcons"></i><span>Contact</span></a>  
              </div>
 
-             <div class="main">
-                 <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+             <div class="main" id="main">
+                 <a id="btnshow" class="icon" onclick="show()"><i class="fa fa-bars"></i></a>
                  <div id="overlay">
                    <div id="text"></div>
                  </div>
@@ -295,7 +295,8 @@
                 </div>
               </section>
 
-         </div>
+          </div>
+        </div> 
           
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
           integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
