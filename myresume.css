@@ -7,7 +7,7 @@ html {
 }
 
 .icon {
-    margin-left: 50%;
+    margin-left: 0;
     color: black;
     font-size: 28px;
 }
@@ -15,6 +15,9 @@ html {
 
 .icon i {
     color: lightgrey;
+    position: fixed;
+    z-index: 999;
+
 }
 
 .icon i:hover {
@@ -855,7 +858,7 @@ form {
     }
 
     .icon i {
-        margin-left: -370px;
+        margin-left: 0px;
         position: fixed;
         z-index: 999;
     }
