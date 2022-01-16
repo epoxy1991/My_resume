@@ -109,18 +109,26 @@ html {
     flex-direction: column;
 }
 
-#overlay {
-    position: fixed;
+.navigation {
+    height: 35px;
+    display: flex;
+}
+
+.main-navigation {
     display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
+    height: 35px;
+    width: 1000px;
+    margin: auto;
+}
+
+.main-navigation a {
+    padding: 0 50px;
+    line-height: 35px;
+    border-left: 1px inset #ccc;
+    border-right: 1px inset #ccc;
+    float: left;
+    color: #00cc66;
+    text-decoration: none;
 }
 
 .myhome {
@@ -763,6 +771,35 @@ form {
     }
 
 
+}
+
+@media only screen and (max-width:390px) {
+    .navigation {
+        margin-bottom: 150px;
+        justify-content: center;
+    }
+    .main-navigation {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 180px;
+        margin-bottom: 70px;
+        z-index: 99999;
+        background-color: #333;
+        position: fixed; 
+        top: 0; 
+        width: 390px; 
+    }
+    .main-navigation a {
+        text-align: center;
+    }
+
+    .sidenav {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:320px) {

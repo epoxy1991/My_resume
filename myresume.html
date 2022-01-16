@@ -21,15 +21,10 @@
     </head>
 
     <body data-spy="scroll" data-target="#mySidenav" data-offset="10">
-
          <div class="flex-container">
              <div id="mySidenav" class="sidenav">
-                
                   <a class="closeBtn" id="btnhide" onclick="hide()">&times;</a>
-                
                  <div id="mypics" class="mypics"><img src="img/post_5.jpg" height="100px" width="100px"></div>
-                
-                  
                     <a id="home-nav" class="home" href="#myhome"><i class="fas fa-home sideBarIcons"></i><span>Home</span></a>
                     <a id="about-nav"class="about" href="#myabout"><i class="far fa-id-badge sideBarIcons"></i><span>About</span></a>
                     <a id="skills-nav" class="skills" href="#myskills"><i class="far fa-file sideBarIcons"></i><span>Skills</span></a>
@@ -41,11 +36,22 @@
 
              <div class="main" id="main">
                  <a id="btnshow" class="icon" onclick="show()"><i class="fa fa-bars"></i></a>
-                 <div id="overlay">
-                   <div id="text"></div>
-                 </div>
+                 
                  <section id="section1">
-                   <div class="myhome" id="myhome">
+                  <div class="navigation" id="myhome">
+                    <div class="main-navigation">
+                        <a href="#myhome">Home</a>
+                        <a href="#myabout">About</a>
+                        <a href="#myskills">Skills</a>
+                        <a href="#myeducation">Education</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                  </div>
+                 </section>                 
+                 <section id="section2">
+                   <div class="myhome">
                      <h1>LOOKING FOR A WEB DEVELOPER?</h1><BR>
                
                         <P>Hi,<br>I'm victor, <br>A WEB DEVELOPER & PROGRAMMER LIVING IN LAGOS, NIGERIA.I 
@@ -56,7 +62,7 @@
                    </div>
                  </section>
                    <br>
-                 <section id="section2">  
+                 <section id="section3">  
                  <div class="myabout" id="myabout">
                      <h1 class="myabout-header">ABOUT ME</h1>
                      <hr>
@@ -75,7 +81,7 @@
                 </section>
                  <br>
 
-               <section id="section3">
+               <section id="section4">
                   <div class="myskills" id="myskills">
                      <h1 class="myskills-header">SKILLS</h1>
                      <hr>
@@ -118,8 +124,8 @@
 
               <br>
 
-              <section id="section4">
-              <div class="myeducation" id="myeducation">
+              <section id="myeducation">
+              <div class="myeducation">
 
                   <div class="education-section">
                     <h1 class="myeducation-header">EDUCATION</h1>
@@ -190,7 +196,7 @@
               </div>
             </section>
 
-              <section id="section5">
+              <section id="section6">
                 <div class="myportfolio" id="portfolio">
                   <h1>PORTFOLIO</h1>
                   <hr>
@@ -199,7 +205,7 @@
                       <div class="project-info">
                         <p class="project-name"><strong>Weather Application</strong></p>
                       </div>
-                      <div class="button"><a class="project-button" href="https://riox.pythonanywhere.com" target="_blank">View Project
+                      <div class="button"><a class="project-button" href="#" target="_blank">View Project
                         <i class="fas fa-briefcase"></i></a>
                       </div>
                     
@@ -229,7 +235,7 @@
                 </div>
               </section>
               <br>
-              <section id="section6">
+              <section id="section7">
                 <div class="myexperience" id="experience">
                   <h1>WORK EXPERIENCE</h1>
                   <hr>
@@ -265,7 +271,7 @@
                 </div>  
               </section>
 
-              <section id="section7">
+              <section id="section8">
                 <div class="mycontact" id="contact">
                   <h1>CONTACTS</h1>
                   <hr>
