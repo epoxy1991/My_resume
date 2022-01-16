@@ -5,6 +5,6 @@ $(document).ready(function(){
    });
    $("#btnshow").click(function(){
     $("#mySidenav").show()
-    $("#main").css('margin-left',250);
+   //  $("#main").css('margin-left',250);
  });
 });

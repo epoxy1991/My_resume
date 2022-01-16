@@ -20,10 +20,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     </head>
 
-    <body data-spy="scroll" data-target="#mySidenav" data-offset="10">
+    <body >
          <div class="flex-container">
              <div id="mySidenav" class="sidenav">
-                  <a class="closeBtn" id="btnhide" onclick="hide()">&times;</a>
+                  <!-- <button class="closeBtn" id="btnhide" onclick="hide()">&times;</button> -->
+                  <i class="fas fa-times closeBtn"  id="btnhide"onclick="hide()"></i>
                  <div id="mypics" class="mypics"><img src="img/post_5.jpg" height="100px" width="100px"></div>
                     <a id="home-nav" class="home" href="#myhome"><i class="fas fa-home sideBarIcons"></i><span>Home</span></a>
                     <a id="about-nav"class="about" href="#myabout"><i class="far fa-id-badge sideBarIcons"></i><span>About</span></a>
@@ -35,9 +36,9 @@
              </div>
 
              <div class="main" id="main">
-                 <a id="btnshow" class="icon" onclick="show()"><i class="fa fa-bars"></i></a>
-                 
-                 <section id="section1">
+                 <!-- <a id="btnshow" class="icon" onclick="show()"><i class="fa fa-bars"></i></a> -->
+                <i class="fa fa-bars icon" id="btnshow" onclick="show()"></i>
+                 <!-- <section id="section1">
                   <div class="navigation" id="myhome">
                     <div class="main-navigation">
                         <a href="#myhome">Home</a>
@@ -49,7 +50,7 @@
                         <a href="#contact">Contact</a>
                     </div>
                   </div>
-                 </section>                 
+                 </section>                  -->
                  <section id="section2">
                    <div class="myhome">
                      <h1>LOOKING FOR A WEB DEVELOPER?</h1><BR>
