@@ -20,7 +20,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     </head>
 
-    <body >
+    <body>
          <div class="flex-container">
              <div id="mySidenav" class="sidenav">
                   <!-- <i class="fas fa-times closeBtn"  id="btnhide"onclick="hide()"></i> -->
@@ -37,22 +37,28 @@
 
              <div class="main" id="main">
                  <!-- <a id="btnshow" class="icon" onclick="show()"><i class="fa fa-bars"></i></a> -->
-                <i class="fa fa-bars icon" id="btnshow" onclick="show()"></i>
-                 <!-- <section id="section1">
-                  <div class="navigation" id="myhome">
-                    <div class="main-navigation">
-                        <a href="#myhome">Home</a>
-                        <a href="#myabout">About</a>
-                        <a href="#myskills">Skills</a>
-                        <a href="#myeducation">Education</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                  </div>
-                 </section>                  -->
+
+                 <nav>
+                  <ul class="nav-links">
+                    <i class="fa fa-bars icon" id="btnshow" onclick="show()"></i>
+                    <img src="img/post_5.jpg" height="35px" width="35px">
+                      <li><a href="#myhome">Home</a></li>
+                      <li><a href="#myabout">About</a></li>
+                      <li><a href="#myskills">Skills</a></li>
+                      <li><a href="#myeducation">Education</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#experience">Experience</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+          
+                  <div class="burger">
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                  </div>    
+                </nav>
                  <section id="section2">
-                   <div class="myhome">
+                   <div class="myhome" id="myhome">
                      <h1>LOOKING FOR A WEB DEVELOPER?</h1><BR>
                
                         <P>Hi,<br>I'm victor, <br>A WEB DEVELOPER & PROGRAMMER LIVING IN LAGOS, NIGERIA.I 
@@ -125,9 +131,8 @@
 
               <br>
 
-              <section id="myeducation">
-              <div class="myeducation">
-
+              <section id="section5">
+              <div class="myeducation" id="myeducation">
                   <div class="education-section">
                     <h1 class="myeducation-header">EDUCATION</h1>
                     <hr>
