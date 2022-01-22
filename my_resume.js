@@ -1,23 +1,14 @@
 $(document).ready(function(){
    $("#btnhide").click(function(){
-      $("#mySidenav").hide()
+      $("#mySidenav").hide(600)
+      $("#btnshow").show(800);
       $("#main").css('margin-left',0);
    
    });
    $("#btnshow").click(function(){
-    $("#mySidenav").show()
+    $("#mySidenav").show(600);
+    $("#btnshow").hide();
    //  $("#main").css('margin-left',250);
  });
 });
 
-const navSlide =() => {
-   const burger = document.querySelector('.burger');
-   const nav = document.querySelector('.nav-links');
-
-   burger.addEventListener('click', ()=>{
-       nav.classList.toggle('nav-active');
-       burger.classList.toggle('bread');
-   });
-}
-
-navSlide();
