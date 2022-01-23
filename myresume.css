@@ -118,7 +118,7 @@ section {
 }
 
 nav {
-  display: flex;
+  display: none;
   position: fixed;
   position: sticky;
   top: 0;
@@ -750,7 +750,31 @@ form {
   }
 }
 @media only screen and (max-width: 768px) {
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main {
+    width: 65%;
+  }
+
+  .sidenav {
+    width: 30%;
+  }
+
+  .mypics {
+    padding-top: 20px;
+  }
+  nav {
+    display: none;
+  }
+
+  .box-wrapper {
+    align-items: center;
+  }
   .icon {
+    display: none;
     position: fixed;
     margin-left: 0;
     z-index: 99999;
@@ -762,7 +786,7 @@ form {
   }
 
   .main {
-    margin-left: 200px;
+   
     width: inherit;
   }
 
@@ -853,48 +877,5 @@ form {
 }
 
 @media screen and (max-width:1224px) {
-  .nav-links {
-      width: 60%;
-  }
-}
-
-@media screen and (max-width:768px) {
   
-  body {
-      overflow-x: hidden;
-  }
- .nav-links {
-     position: absolute;
-     right: 0;
-     top: 8vh;
-     background-color: #67bb00;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     height: 92vh;
-     width: 50%;
-     transform: translateX(100%);
-     transition: transform 0.5s ease-in;
- }
-
- .burger {
-  display: block;
-}
-
-}
-
-.nav-active{
-  transform: translateX(0%);
-}
-
-.bread .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.bread .line2 {
-  opacity: 0;
-}
-
-.bread .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
