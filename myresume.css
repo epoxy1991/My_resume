@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,27 +18,31 @@ html {
   color: whitesmoke;
   font-size: 28px;
   position: fixed;
-  position: sticky;
   left: 3px;
   top: 5px;
   z-index: 99999;
+  border: 5px lightgreen solid;
+  border-radius: 5px;
+  background: black;
+  /* display: none; */
 }
 
+#btnshow {
+  display: none;
+}
 .icon:hover {
   color: palegreen;
 }
 
 .sidenav {
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 20%;
-  background-color: white;
-  border-radius: 10px;
+  background-color: #030b14;
   border-right: solid 1px gainsboro;
   text-decoration: none;
   flex-direction: column;
   list-style-type: none;
-  position: relative;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -51,13 +55,18 @@ html {
 }
 
 section {
-  width: 98%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#section2 {
+  padding: unset;
 }
 .sidenav > .closeBtn {
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
-  color: black;
+  color: white;
   position: absolute;
   left: 85%;
   top: auto;
@@ -99,7 +108,7 @@ section {
 }
 
 .sidenav > a > span {
-  color: black;
+  color: whitesmoke;
   margin-left: 35px;
   margin-top: -35px;
   display: block;
@@ -115,6 +124,7 @@ section {
   width: 79%;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 nav {
@@ -131,21 +141,21 @@ nav {
 }
 
 .nav-links {
-display: flex;
-justify-content:space-around;
- width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .nav-links li {
-list-style: none;
+  list-style: none;
 }
 
 .nav-links a {
-text-decoration: none;
-color: #fff;
-font-size: 15px;
-font-weight: bold;
-letter-spacing: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .nav-links > img {
@@ -165,6 +175,10 @@ letter-spacing: 3px;
   border-radius: 5px;
 }
 
+.mypics {
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
 .burger div {
   width: 25px;
   height: 3px;
@@ -173,11 +187,9 @@ letter-spacing: 3px;
   transition: all 0.5s;
 }
 
-
 .myhome {
   background-image: url("img/devop2.jpg");
   width: 100%;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
@@ -722,7 +734,7 @@ form {
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .main-timeline .timeline-icon:before {
     width: 50px;
     right: -50px;
@@ -748,31 +760,8 @@ form {
   .main-timeline .timeline-content {
     margin-top: 115px;
   }
-}
-@media only screen and (max-width: 768px) {
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .main {
-    width: 65%;
-  }
-
-  .sidenav {
-    width: 30%;
-  }
-
-  .mypics {
-    padding-top: 20px;
-  }
-  nav {
-    display: none;
-  }
-
-  .box-wrapper {
-    align-items: center;
-  }
+} */
+/* @media only screen and (max-width: 768px) {
   .icon {
     display: none;
     position: fixed;
@@ -860,8 +849,8 @@ form {
   .main-timeline .timeline:nth-child(even) .timeline-content:after {
     left: 85px;
   }
-}
-@media only screen and (max-width: 479px) {
+} */
+/* @media only screen and (max-width: 479px) {
   .main-timeline .timeline-content,
   .main-timeline .timeline:nth-child(2n) .timeline-content {
     padding-left: 110px;
@@ -876,6 +865,64 @@ form {
   }
 }
 
-@media screen and (max-width:1224px) {
-  
+@media screen and (max-width: 1224px) {
+  .nav-links {
+    width: 60%;
+  }
+} */
+
+/* @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    background-color: #67bb00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 92vh;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .burger {
+    display: block;
+  }
+} */
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.bread .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bread .line2 {
+  opacity: 0;
+}
+
+.bread .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* For Mobile/Tablets */
+@media only screen and (max-width: 600px) {
+  .myhome button {
+    width: 50%;
+  }
+
+  .box-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidenav {
+    width: 60%;
+    z-index: 10001;
+    position: fixed;
+  }
 }
